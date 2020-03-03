@@ -163,7 +163,7 @@ var board = {
     $element: $('#board .column-container')
 }
 
-// Method for create new column - linked to 'board' object
+// Method for create a new column - linked to 'board' object
 $('.create-column').click(function(){
     var name = prompt('Wpisz nazwę kolumny');
     var column = new Column(name);
@@ -173,7 +173,7 @@ $('.create-column').click(function(){
 
 
 
-// CREATING NEW EXAMPLES OF COLUMN
+// CREATING A NEW EXAMPLES OF COLUMN
 var todoColumn = new Column('Do zrobienia');
 var doingColumn = new Column('W trakcie', 'green');
 var doneColumn = new Column('Skończone', 'blue' );
