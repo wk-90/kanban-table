@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+
+body {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+  }
+
+  /* Min height of li element when column is empty */
+  .ui-sortable {
+    min-height: 80px;
+  }
+  
+  /* Kanban Table styles */
+ 
+  h1 {
+      text-align: center;
+  }
+
+  .board-title {
+    margin-left: 8px;
+  }
+  .column-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+  .create-column {
+    cursor: pointer;
+    margin: 5px 8px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: center;
+    height: 40px;
+    width: 120px;
+    border: none;
+    /* border: 2px solid rgba(0, 0, 0, 0.4); */
+    color: rgb(230, 230, 230);
+    background: rgb(35, 158, 10);
+    border-radius: 15px;
+    outline: none;
+    font-weight: bold;
+  }
+
+  .create-column:hover {
+    font-size: 14px;
+    color: #fff;
+    background: rgb(31, 138, 10);
+  }
+  
+  /* COLUMN STYLES */
+  .column {
+    order: 1;
+    min-width: 300px;
+    min-height: 50vh;
+    margin-left: 8px;
+    margin-bottom: 8px;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    border-radius: 1em;
+    border: 2px outset rgba(0, 0, 0, 0.4);
+  }
+  .column-title {
+    color: red;
+    margin: 8px 5px;
+    text-align: center;
+  }
+  .column-btn-delete {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 32px;
+    height: 32px;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 18px;
+    border-top-right-radius: 0.75em;
+    outline: none;
+  }
+
+  .column-btn-delete:hover {
+    color: red;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .column--gray {
+    background: rgb(220, 220, 220);
+    
+  }
+  .column--green {
+    background-color: rgb(140, 218, 140);
+    
+  }
+  .column--blue {
+    background-color: rgb(145, 194, 216); 
+  }
+  .column--blue ul {
+    color: rgb(150, 150, 150)
+  }
+
+  .add-card {
+    
+    margin: 5px 8px;
+    display: block;
+  }
+  .column-card-list {
+    list-style: none;
+    margin: 5px;
+    padding: 0px;
+  }
+
+  .btn-add {
+      margin-bottom: 6px;
+      font-size: 20px;
+      font-weight: 700;
+      width: 32px;
+      height: 32px;
+      border: none;
+      background: rgb(35, 158, 10);
+      color: #fff;    
+      margin-bottom: 8px;  
+      outline: none;
+  }
+
+  .btn-add:hover {
+      cursor: pointer;
+      font-size: 22px;
+      background: rgb(31, 138, 10);
+      
+  }
+  
+  /* CARD STYLES */
+  .card {
+    box-sizing: border-box;
+    display: block;
+    height: 60px;
+    margin-bottom: 5px;
+    padding: 4px;
+    overflow: hidden;
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    font-weight: bold;
+  }
+  
+  .card-description {
+    margin: 2px 0;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+  }
+  .btn-delete {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 22px;
+    height: 22px;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    outline: none;
+  }
+
+  .btn-delete:hover {
+    color: red;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .card-placeholder {
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: block;
+    height: 60px;
+    margin-bottom: 5px;
+    background-color: rgb(230, 196, 173);
+  
+  }
+
+  .add-card, .btn-add {
+      display: inline-block;
+  }
+  
+ 
+  .custom-select {
+    margin-left: 10px;
+  }
+  .custom-select select {
+    background: #fff;
+    font-family: Roboto;
+    font-size: 16px;
+    width: 280px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 10px;
+    outline: none;
+    padding: 3px;
+    
+  }
+
+  
