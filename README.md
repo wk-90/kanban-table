@@ -6,4 +6,4 @@ Used technologies: <br>
 <br>
 App is written in Object Oriented Model.
 <br> 
-Click to check: https://wk-90.github.io/kanban-table-app/.
+Click to check: https://wk-90.github.io/kanban-table/
