@@ -69,25 +69,21 @@ class Column {
                 $columnDelete.hide();
             }
 
-            // Column color setting - based on choosen value from 'select' field
+            // Column color choosing - based on choosen value from 'select' field
             $checkbox.click(function(){
                 $('.list').change(function(){
                     var getval = $(this).val();
-                    console.log(getval);
-                                
+                                            
                     if(getval==1){
-                        console.log('kolor gray');
                         $column.removeClass('column--green');
                         $column.removeClass('column--blue');
                         $column.addClass('column--gray');
-                    }else if(getval==2) {
-                        console.log('kolor green');
+                    }else if(getval==2) {                        
                         $column.removeClass('column--gray');
                         $column.removeClass('column--blue');
                         $column.addClass('column--green');
                         
-                    } else if (getval==3){
-                        console.log('kolor blue');
+                    } else if (getval==3){                       
                         $column.removeClass('column--gray');
                         $column.removeClass('column--green');
                         $column.addClass('column--blue');
