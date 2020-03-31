@@ -164,7 +164,7 @@ $('.create-column').click(function(){
     var name = prompt('Wpisz nazwę kolumny');
     var column = new Column(name);
     board.addColumn(column);
-    // getVal();
+   
 })
 
 
